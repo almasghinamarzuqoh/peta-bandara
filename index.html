@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Copyright" content="Bandara" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ranyeh" />
+    <meta name="rating" content="general" />
+    <meta name="language" content="English" />
+    <meta name="application-name" content="Bandara" />
+    <meta
+      name="description"
+      content="Tailwind CSS Company Landing Page Template by Ranyeh."
+    />
+    <meta name="keywords" content="company" />
+    <meta
+      name="twitter:title"
+      content="Bandara | Tailwind CSS Company Landing Page"
+    />
+    <meta
+      name="twitter:description"
+      content="Tailwind CSS Company Landing Page Template by Ranyeh."
+    />
+    <meta
+      content="Bandara | Tailwind CSS Company Landing Page"
+      property="og:title"
+    />
+    <meta content="Bandara" property="og:site_name" />
+    <meta
+      content="Tailwind CSS Company Landing Page Template by Ranyeh."
+      property="og:description"
+    />
+    <meta content="website" property="og:type" />
+
+    <meta name="msapplication-TileColor" content="#3d63dd" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/mstile-144x144.png"
+    />
+    <meta name="theme-color" content="#3d63dd" />
+
+    <!-- Page title -->
+    <title>Bandara | Tailwind CSS Company Landing Page</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="194x194"
+      href="./assets/favicon/favicon-194x194.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest.json" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#3d63dd"
+    />
+
+    <!-- CSS Plugins -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Page loading -->
+    <div
+      class="page-loading fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      aria-label="Loading..."
+    >
+      <div class="grid-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <header
+      class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent"
+      role="banner"
+      aria-label="Navigation bar"
+    >
+      <div class="container">
+        <div
+          class="ic-navbar-container relative -mx-5 flex items-center justify-between"
+        >
+          <div class="w-60 lg:w-56 max-w-full px-5">
+            <a
+              href="."
+              class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-4xl lg:leading-tight"
+            >
+              Peta
+            </a>
+          </div>
+          <div class="flex w-full items-center justify-between px-5">
+            <div>
+              <button
+                type="button"
+                class="ic-navbar-toggler absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden"
+                data-web-toggle="navbar-collapse"
+                data-web-target="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation menu"
+              >
+                <i class="lni lni-menu"></i>
+              </button>
+
+              <nav
+                id="navbarMenu"
+                class="ic-navbar-collapse absolute right-4 top-[80px] w-full max-w-[250px] rounded-lg hidden bg-primary-light-1 py-5 shadow-lg dark:bg-primary-dark-1 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6"
+              >
+                <ul
+                  class="block lg:flex"
+                  role="menu"
+                  aria-label="Navigation menu"
+                >
+                  <li class="group relative">
+                    <a
+                      href="#home"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active"
+                      role="menuitem"
+                      >Home</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#services"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Fasilitas</a
+                    >
+                  </li>
+
+                  <li class="group relative">
+                    <a
+                      href="#portfolio"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Peta Bandara</a
+                    >
+                  </li>
+                  <li class="group relative">
+                    <a
+                      href="#informasi"
+                      class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70"
+                      role="menuitem"
+                      >Informasi Wisata</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+              <div class="hidden sm:flex">
+                <a
+                  href="javascript:boid(0)"
+                  class="video-popup ml-5 px-6 py-3 rounded-md bg-primary-color bg-opacity-20 text-base font-medium text-primary-color hover:bg-opacity-100 hover:text-primary"
+                  role="button"
+                  ></i> Watch Intro</a
+                >
+                <a
+                  href="#services"
+                  class="btn-navbar ml-5 px-6 py-3 rounded-md bg-primary-color bg-opacity-20 text-base font-medium text-primary-color hover:bg-opacity-100 hover:text-primary"
+                  role="button"
+                  >Started</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main relative">
+      <!-- Hero section -->
+      <section
+        id="home"
+        class="relative overflow-hidden bg-primary text-primary-color pt-[120px] md:pt-[130px] lg:pt-[160px]"
+      >
+        <div class="container">
+          <div class="-mx-5 flex flex-wrap items-center">
+            <div class="w-full px-5">
+              <div class="scroll-revealed mx-auto max-w-[780px] text-center">
+                <h1
+                  class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight"
+                >
+                  Peta Bandara Komodo
+                </h1>
+
+                <p
+                  class="mx-auto mb-9 max-w-[600px] text-base text-primary-color sm:text-lg sm:leading-normal"
+                >
+                  Kantor Cabang Pembantu Labuan Bajo Perum LPPNPI Kantor Cabang Pembantu Labuan Bajo, Jl El Tari Labuan Bajo Kelurahan Batu Cermin Kecamatan Komodo Kabupaten Manggarai Barat - Nusa Tenggara Timur 86754
+                </p>
+              </div>
+            </div>
+            <div class="w-full px-5">
+              <div class="scroll-revealed relative z-10 mx-auto max-w-[845px]">
+                <figure class="mt-16">
+                  <img
+                    src="./assets/img/bandara_komodo1.jpg"
+                    alt="Hero image"
+                    class="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
+                  />
+                </figure>
+
+                <div class="absolute -left-9 bottom-0 z-[-1]">
+                  <img
+                    src="./assets/img/dots.svg"
+                    alt
+                    class="w-[120px] opacity-75"
+                  />
+                </div>
+
+                <div class="absolute -right-6 -top-6 z-[-1]">
+                  <img
+                    src="./assets/img/dots.svg"
+                    alt
+                    class="w-[120px] opacity-75"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section id="about" class="section-area">
+        <div class="container">
+          <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
+            <div class="w-full">
+              <figure class="scroll-revealed max-w-[480px] mx-auto">
+                <img
+                  src="./assets/img/bandara-komodo.jpeg"
+                  alt="About image"
+                  class="rounded-xl"
+                />
+              </figure>
+            </div>
+
+            <div class="w-full">
+              <div class="scroll-revealed">
+                <h6 class="mb-2 block text-lg font-semibold text-primary">
+                  Profile
+                </h6>
+                <h2 class="mb-6">
+                  Bandara Komodo
+                </h2>
+              </div>
+
+              <div class="tabs scroll-revealed">
+                <div
+                  class="tabs-content mt-4"
+                  id="tabs-panel-profile"
+                  tabindex="-1"
+                  role="tabpanel"
+                  aria-labelledby="tabs-list-profile"
+                >
+                  <table>
+                    <tr><td>Nama Bandar Udara</td><td>:</td><td>KOMODO</td></tr>
+                    <tr><td>Kode ICAO</td><td>:</td><td>WATO</td></tr>
+                    <tr><td>Kode IATA</td><td>:</td><td>LBJ</td></tr>
+                    <tr><td>Kelas</td><td>:</td><td>Kelas II</td></tr>
+                    <tr><td>Pengelola</td><td>:</td><td>UPT Ditjen Hubud</td></tr>
+                    <tr><td>Kantor Otoritas</td><td>:</td><td>OTORITAS BANDAR UDARA WILAYAH IV DENPASAR</td></tr>
+                    <tr><td>Email</td><td>:</td><td>komodo.apo@gmail.com</td></tr>
+
+                    <tr><td>Telepon</td><td>:</td><td>038541132</td></tr>
+                    <tr><td>Fax</td><td>:</td><td>038541149</td></tr>
+                    <tr><td>Status Operasi</td><td>:</td><td>Umum</td></tr>
+                    <tr><td>Penggunaan</td><td>:</td><td>Internasional</td></tr>
+                    <tr><td>Provinsi</td><td>:</td><td>Nusa Tenggara Timur</td></tr>
+                    <tr><td>Kabupaten / Kota</td><td>:</td><td>Kabupaten Manggarai Barat</td></tr>
+                    <tr><td>Kecamatan</td><td>:</td><td>Komodo</td></tr>
+                    <tr><td>Kelurahan / Desa</td><td>:</td><td>Batu Cermin</td></tr>
+                    <tr><td>Alamat Bandar Udara</td><td>:</td><td>Jl. Yohanes Sehadun, Labuan Bajo</td></tr>
+                    <!-- dan seterusnya -->
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services section -->
+      <section id="services" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h2 class="mb-6">Fasilitas</h2>
+          </div>
+
+          <div class="row">
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Refreshing Design
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Area Parkir
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Atm Center
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Co-Working Space
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Free Wifi
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Halte Bus
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Kantin
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Money Changer
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Mushola
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Play Ground
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Pojok Baca
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Restoran
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Ruang Menyusui
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Toilet
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+              <div class="group hover:-translate-y-1">
+                <div
+                  class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color"
+                >
+                  <i class="lni lni-grid-alt"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="text-[1.25rem]/tight font-semibold mb-5">
+                    Toilet Disabilitas
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum dolores autem quidem odit beatae perspiciatis!
+                    Rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Intro video section -->
+      <section id="intro" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h6 class="mb-2 block text-lg font-semibold text-primary">
+              Intro Video
+            </h6>
+            <h2 class="mb-6">Watch Our Intro Video</h2>
+            <p>
+              There are many variations of passages of Lorem Ipsum available but
+              the majority have suffered alteration in some form.
+            </p>
+          </div>
+
+          <div class="scroll-revealed relative max-w-[900px] mx-auto">
+            <img
+              src="./assets/img/bandara_komodo1.jpg"
+              alt="Intro video"
+              class="w-full h-full aspect-video rounded-xl object-cover"
+            />
+            <a
+              href="javascript:void(0)"
+              class="video-popup w-[80px] h-[80px] rounded-full inline-flex items-center justify-center bg-primary text-primary-color text-[1.875rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md hover:bg-primary-color hover:text-primary hover:shadow-xl focus:bg-primary-color focus:text-primary focus:shadow-xl"
+            >
+              <i class="lni lni-play"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+      <section id="portfolio" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h2 class="mb-6">Peta Bandara (Terminal)</h2>
+          </div>
+
+          <div class="scroll-revealed portfolio-grid row">
+            <div class="scroll-revealed relative max-w-[900px] mx-auto">
+              <img
+                src="./assets/img/R.jpg"
+                alt="Intro video"
+                class="w-full h-full aspect-video rounded-xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section id="informasi" class="section-area">
+        <div class="container">
+          <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+            <h2 class="mb-6">Informasi Wisata Terdekat</h2>
+          </div>
+
+          <div
+            class="swiper testimonial-carousel common-carousel scroll-revealed"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/Bandar+Udara+internasional+komodo+labuan+bajo/Puncak+Waringin,+Labuan+Bajo,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./@-8.4918825,119.8807997,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db4668196ba6a25:0x8c06de7fd8df4fb4!2m2!1d119.879615!2d-8.494919?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Puncak Waringin 
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo+labuan+bajo/Menara+Pandang+Labuan+Bajo,+GV2H%2B79W,+Goron+Talo,+Komodo,+West+Manggarai+Regency,+East+Nusa+Tenggara/@-8.4952522,119.8774762,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db4676ae1ce279b:0x6bea74cf56a0c336!2m2!1d119.878118!2d-8.4998179?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Menara Padang Labuan Bajo
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo+labuan+bajo/Pelabuhan+Labuan+Bajo,+GV4F%2B5VW,+Labuan+Bajo,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./@-8.4911406,119.8757723,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db4676c37550521:0xd7603e1fb6ae6b62!2m2!1d119.8747102!2d-8.4945214?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Pelabuhan Manggarai Barat
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo/Taman+Kampung+Air+Labuan+Bajo,+GV3H%2BR7G,+Labuan+Bajo,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./@-8.4916023,119.8760587,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db467de72acc465:0x363c559740dbcefe!2m2!1d119.8782051!2d-8.4954449?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Taman Kampung Air
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/Bandara+Internasional+Komodo,+Labuan+Bajo,+Labuan+Bajo,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./Bukit+Syilvia,+GVPG%2B9GX,+Labuan+Bajo,+Komodo,+West+Manggarai+Regency,+East+Nusa+Tenggara/@-8.4759636,119.8707837,15z/data=!4m14!4m13!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db4679db1158085:0xdf1e3988d5e251b8!2m2!1d119.8763504!2d-8.4640025!5i1?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Bukit Sylvia
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo/bukit+amelia/@-8.477177,119.8707837,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db46608b4f62881:0x6cc6b4b4b94522dc!2m2!1d119.8761094!2d-8.4646875?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Bukit Amelia
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo/bukit+hercadi/@-8.4755226,119.8707805,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db467f02108d143:0xbf3e78037cb909e2!2m2!1d119.8750264!2d-8.4613787?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Bukit Hercadi
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+internasional+komodo+labuan+bajo/Puncak+Golo+Mori,+8R68%2B39P,+Unnamed+Road,+Golo+Mori,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./@-8.5893095,119.7656263,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db48be7a02b9fed:0xd1d7307b32868e40!2m2!1d119.8159541!2d-8.6897905?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Puncak Golomori
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/Bandara+Internasional+Komodo,+Labuan+Bajo,+Labuan+Bajo,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./Jl.+Pantai+Pede,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./@-8.5014194,119.8713887,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db466ae6bf5733d:0x3de38e7503d96549!2m2!1d119.8762428!2d-8.5139931?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Pantai Pede
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo+labuan+bajo/pantai+waecicu+labuan+bajo/@-8.4761522,119.8693665,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db4660e51f28abf:0xe2110b389b0554ca!2m2!1d119.8721983!2d-8.4639763?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Pantai Waecicu
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo+labuan+bajo/Pantai+Wae+Rana,+GVFJ%2B86W,+Labuan+Bajo,+Kec.+Komodo,+Kabupaten+Manggarai+Barat,+Nusa+Tenggara+Tim./@-8.482529,119.8786619,16z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db466763b87bea7:0x3fc6115c6314c3!2m2!1d119.8805782!2d-8.4766365?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Pantai Wae Rana
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo/pantai+utara+flores/@-8.4790513,119.8629284,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db46554014e0751:0xbeb226b624591737!2m2!1d119.8890795!2d-8.4627543?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Pantai Utara Flores
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo/parapuar+view+point/@-8.5019985,119.8776153,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db4652fa8a7d78f:0xec9a2ebc8371409b!2m2!1d119.8933113!2d-8.5133454?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Parapuar View Point
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo+labuan+bajo/gua+batu+cermin/@-8.4884786,119.8834177,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db465cc00000001:0x4117d8cde8e0be40!2m2!1d119.8991958!2d-8.479371?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Gua Batu Cermin
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 py-8 shadow-card-2 sm:px-8"
+                >
+                  <figure class="flex items-center gap-4">
+                    <figcaption class="flex-grow">
+                      <h3
+                        class="text-sm font-semibold text-body-light-11 dark:text-body-dark-11"
+                      >
+                        <a 
+                          href="https://www.google.com/maps/dir/bandara+komodo/rangko+cave/@-8.4656472,119.8836866,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x2db465219938ff6f:0x65f416d9240eb787!2m2!1d119.8871658!2d-8.488842!1m5!1m1!1s0x2db46fe514da12bd:0x8ee87aa45f9803ed!2m2!1d119.9639839!2d-8.4326763?entry=ttu&g_ep=EgoyMDI1MDYxMC4xIKXMDSoASAFQAw%3D%3D" 
+                          class="mb-6 text-base text-body-light-11 dark:text-body-dark-11"
+                          target="_blank"
+                        >
+                          Ranko Cave
+                        </a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="mt-[60px] flex items-center justify-center gap-1">
+              <div class="swiper-button-prev">
+                <i class="lni lni-arrow-left"></i>
+              </div>
+              <div class="swiper-button-next">
+                <i class="lni lni-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark-2 text-white">
+      <div class="container py-20 lg:py-[50px]">
+        <div class="row">
+          <div class="col-12 order-first lg:col-4 items-center text-center">
+            <div class="w-full">
+              <a
+                href="."
+                class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-4xl lg:leading-tight"
+              >
+                Peta Bandara Komodo
+              </a>
+
+              <p class="mb-8 text-body-dark-11">
+                Selamat datang, semoga selamat sampai tujuan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full border-t border-solid border-alpha-dark"></div>
+      <div class="container py-8">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2">
+            <div class="my-1">
+              <div
+                class="flex flex-wrap justify-center gap-x-3 md:justify-start"
+              >
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <div class="my-1 flex justify-center md:justify-end">
+              <p class="text-body-dark-11">
+                &#169; Peta Bandara Komodo. Distributed by <a href="#" target="_blank">Almas Ghina</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      type="button"
+      class="inline-flex w-12 h-12 rounded-md items-center justify-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 fixed bottom-[117px] right-[20px] hover:-translate-y-1 opacity-100 visible z-50 is-hided"
+      data-web-trigger="scroll-top"
+      aria-label="Scroll to top"
+    >
+      <i class="lni lni-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+      // Scroll Reveal
+      const sr = ScrollReveal({
+        origin: "bottom",
+        distance: "16px",
+        duration: 1000,
+        reset: false,
+      });
+
+      sr.reveal(`.scroll-revealed`, {
+        cleanup: true,
+      });
+
+      // GLightBox
+      GLightbox({
+        selector: ".video-popup",
+        href: "https://youtu.be/_ybu8baS0Rw?si=LdC2biDG4mjxanZj",
+        type: "video",
+        source: "youtube",
+        width: 900,
+        autoplayVideos: true,
+      });
+
+      const myGallery3 = GLightbox({
+        selector: ".portfolio-box",
+        type: "image",
+        width: 900,
+      });
+
+      const testimonialSwiper = new Swiper(".testimonial-carousel", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
