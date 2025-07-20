@@ -93,6 +93,8 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    
   </head>
   <body>
     <!-- Page loading -->
@@ -1316,7 +1318,7 @@
             <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
               <figure
                 class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1"
-              >
+                onclick="openModal('busModal')">
                 <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                   <img
                     src="./assets/img/transportasi/bus.jpeg"
@@ -1343,7 +1345,7 @@
             <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
               <figure
                 class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1"
-              >
+                onclick="openModal('taxiModal')">
                 <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                   <img
                     src="./assets/img/transportasi/taxi.jpeg"
@@ -1370,7 +1372,7 @@
             <div class="scroll-revealed col-12 sm:col-6 md:col-4 lg:col-3">
               <figure
                 class="group rounded-xl bg-body-light-1 dark:bg-body-dark-12/10 px-5 pb-10 pt-12 shadow-card-2 hover:shadow-lg hover:-translate-y-1"
-              >
+                onclick="openModal('travelModal')">
                 <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                   <img
                     src="./assets/img/transportasi/travel.jpeg"
@@ -1450,12 +1452,249 @@
       <i class="lni lni-chevron-up"></i>
     </button>
 
+
+    <!-- MODAL HTML -->
+    <div id="busModal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+            <div class="modal-header">
+                <img src="./assets/img/transportasi/bus.jpeg" 
+                     alt="Bus" class="modal-icon object-cover">
+                <h3 class="modal-title">Transportasi Bus</h3>
+                <p class="modal-subtitle">Pilihan ekonomis menuju pusat kota Labuan Bajo</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="info-card bus-card">
+                    <h4 class="text-lg font-bold text-gray-800 mb-3">📍 Informasi Umum</h4>
+                    <p class="text-gray-700 leading-relaxed">Layanan bus bandara disediakan oleh pihak ketiga bekerja sama dengan pengelola bandara. Bus ini melayani rute dari area bandara menuju pusat kota Labuan Bajo dan sebaliknya. Penumpang dapat menemukan titik naik bus di area terminal kedatangan domestik.</p>
+                </div>
+                
+                <div class="info-card bus-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-xl font-bold text-blue-700">🚌 BUS DAMRI</h4>
+                        <span class="price-badge">Rp 10.000</span>
+                    </div>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon bg-blue-500 text-white">🗺️</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Rute Perjalanan</p>
+                                <p class="text-gray-600 text-sm mt-1">Bandara Komodo → Labuan Bajo, melewati Puncak Waringin, Bukit Sylvia, Kampung Ujung, Hotel Marina, Hotel Puri Sari, dan hotel lain di pusat kota</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-green-500 text-white">🕐</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Jam Operasional</p>
+                                <p class="text-gray-600 text-sm mt-1">Setiap hari pukul 07.00–17.00 WITA, dengan 4 unit armada melayani sekitar 16 trip per hari</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-purple-500 text-white">🎫</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Pembelian Tiket</p>
+                                <p class="text-gray-600 text-sm mt-1">Tersedia di loket keberangkatan bandara. Sistem e-ticketing sedang dikembangkan untuk kemudahan pemesanan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card bus-card"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk Taxi -->
+    <div id="taxiModal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+            <div class="modal-header">
+                <img src="./assets/img/transportasi/taxi.jpeg" 
+                     alt="Taxi" class="modal-icon object-cover">
+                <h3 class="modal-title">Taksi Lokal & Bandara</h3>
+                <p class="modal-subtitle">Transportasi nyaman langsung ke tujuan Anda</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="info-card taxi-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-xl font-bold text-amber-700">🚖 Taksi Resmi Bandara</h4>
+                        <span class="price-badge bg-gradient-to-r from-amber-500 to-orange-500">Fixed Rate</span>
+                    </div>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon bg-amber-500 text-white">🏢</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Layanan Resmi</p>
+                                <p class="text-gray-600 text-sm mt-1">Dikelola oleh koperasi lokal dengan sistem tarif tetap berdasarkan tujuan. Stan taksi tersedia di area kedatangan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-blue-500 text-white">👥</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Pelayanan Profesional</p>
+                                <p class="text-gray-600 text-sm mt-1">Petugas akan membantu mencatat tujuan dan mengatur kendaraan. Melayani ke hotel, pelabuhan, dan destinasi wisata</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-green-500 text-white">💰</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Tarif Kompetitif</p>
+                                <p class="text-gray-600 text-sm mt-1">Estimasi <span class="font-bold text-green-600">Rp 85.000</span> per perjalanan ke hotel/pusat kota. Tarif dapat dinegosiasikan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-purple-500 text-white">📱</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Booking Online</p>
+                                <p class="text-gray-600 text-sm mt-1">Tersedia juga layanan pre-booking melalui platform online untuk kemudahan reservasi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card bus-card"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal untuk Travel -->
+    <div id="travelModal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            
+            <div class="modal-header">
+                <img src="./assets/img/transportasi/travel.jpeg" 
+                     alt="Travel" class="modal-icon object-cover">
+                <h3 class="modal-title">Travel & Private Transfer</h3>
+                <p class="modal-subtitle">Layanan premium untuk kenyamanan perjalanan Anda</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="info-card travel-card">
+                    <h4 class="text-lg font-bold text-gray-800 mb-3">🌟 Tentang Layanan Travel</h4>
+                    <p class="text-gray-700 leading-relaxed mb-4">Layanan travel atau shuttle dioperasikan oleh agen perjalanan lokal terpercaya. Melayani rute dari bandara menuju area wisata seperti Pelabuhan Labuan Bajo, Bukit Cinta, dan kawasan hotel di luar pusat kota.</p>
+                    <p class="text-gray-700 leading-relaxed">Beberapa penyedia menerima pemesanan online dan menyediakan kendaraan ber-AC dengan sopir profesional. Titik keberangkatan biasanya di zona parkir kendaraan penumpang.</p>
+                </div>
+                
+                <div class="info-card travel-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-xl font-bold text-purple-700">🚐 Travel Shuttle</h4>
+                        <span class="price-badge bg-gradient-to-r from-purple-500 to-pink-500">Rp 200.000</span>
+                    </div>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon bg-purple-500 text-white">🚪</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Door-to-Door Service</p>
+                                <p class="text-gray-600 text-sm mt-1">Layanan antar jemput langsung dari bandara ke hotel atau destinasi Anda</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-blue-500 text-white">⏰</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Jadwal Fleksibel</p>
+                                <p class="text-gray-600 text-sm mt-1">Waktu keberangkatan disesuaikan dengan jadwal penerbangan Anda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card travel-card">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="text-xl font-bold text-indigo-700">🚙 Private Transfer</h4>
+                        <span class="price-badge bg-gradient-to-r from-indigo-500 to-blue-500">Rp 150.000 - 200.000</span>
+                    </div>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon bg-indigo-500 text-white">🚗</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Kendaraan Premium</p>
+                                <p class="text-gray-600 text-sm mt-1">Mobil pribadi atau MPV dengan fasilitas AC dan ruang bagasi yang luas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-green-500 text-white">👨‍💼</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Sopir Profesional</p>
+                                <p class="text-gray-600 text-sm mt-1">Sopir berpengalaman yang dapat berbahasa Inggris dan Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-orange-500 text-white">📱</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Platform Booking</p>
+                                <p class="text-gray-600 text-sm mt-1">Tersedia di GetYourGuide, Travel Buddies, Veronika's Adventure, dan Traveloka</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon bg-red-500 text-white">⭐</div>
+                            <div>
+                                <p class="font-semibold text-gray-800">Layanan Premium</p>
+                                <p class="text-gray-600 text-sm mt-1">Penjemputan tepat waktu dengan pelayanan yang ramah dan profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-card bus-card"></div>
+            </div>
+      </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <script src="./assets/js/main.js"></script>
     <script>
+      //MODAL ACTION
+      function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            // Jika event ada dan target adalah modal content, jangan tutup modal
+            if (event && event.target.classList.contains('modal-content')) {
+                return;
+            }
+            
+            // Tutup semua modal
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                modal.classList.remove('show');
+            });
+            document.body.style.overflow = 'auto';
+        }
+
+        // Tutup modal dengan tombol ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Prevent modal from closing when clicking on modal content
+        document.querySelectorAll('.modal-content').forEach(content => {
+            content.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        });
+      //END MODAL
       // Scroll Reveal
       const sr = ScrollReveal({
         origin: "bottom",
